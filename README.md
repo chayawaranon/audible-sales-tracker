@@ -3,11 +3,11 @@ This project is aimed to implement end-to-end data pipeline using Google Cloud P
 
 ## DATA PIPELINE ARCHITECTURE:
 ![data pipeline architecture](https://user-images.githubusercontent.com/48947748/160275716-03e84672-ec80-4a84-a225-6d1a7b2be0d6.png)
-Data source come from RDBMS(MySQL) and Cloud Composer(Airflow) orchestrates its movement to a GCS. The pyspark script is then run to transform the data and aggregate with API to convert the Price column from USD to THB and then store the data back to GCS in parquet format. Airflow move the transformed data into a data warehouse hosted in Bigquery and then create a view for select certain column that use to create a dashboard.
+Data source come from RDBMS(MySQL), and Cloud Composer(Airflow) orchestrates its movement to a GCS. The pyspark script is then run to transform the data and aggregate with API to convert the Price column from USD to THB and then store the data back to GCS in parquet format. Finally, airflow moves the transformed data into a data warehouse hosted in Bigquery and then creates a view to select a particular column used to create a dashboard.
 
 ## TRANSFORM TABLE SCHEMA
 ![audible data](https://user-images.githubusercontent.com/48947748/160276412-bb3139b6-47b2-4f83-9611-b38e115f92ab.png) <br />
-The transform data is contain only one table why? because the raw data in MySQL are contain two table then I think its better if I join two table and then store it in data warehouse
+The transformed data contains only one table. Why? because the raw data in MySQL has two tables then, I think its better if I join two tables and then store it in the data warehouse
 
 ## ETL FLOW:
 ![airflow_DAG](https://user-images.githubusercontent.com/48947748/160271509-0445cc17-6cb1-4ec8-bf35-6475e83029b0.jpg)
