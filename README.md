@@ -14,7 +14,7 @@ The transform data is contain only one table why? because the raw data in MySQL 
 
 ## DASHBOARD:
 The dashboard is publicly accessible here
-Google data studio: https://datastudio.google.com/reporting/bd61006d-1cf1-4ff6-92fb-138d523c7399 <br />
+Google data studio: https://datastudio.google.com/reporting/bd61006d-1cf1-4ff6-92fb-138d523c7399 </ br>
 Power BI: https://app.powerbi.com/view?r=eyJrIjoiZWVkZjRiZGYtZjBhOS00ODY2LTkyYTYtZGY5OWNiMmYyNTBmIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D
 
 Some examples screenshot of dashboard below!
