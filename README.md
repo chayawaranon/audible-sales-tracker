@@ -6,7 +6,7 @@ This project is aimed to implement end-to-end data pipeline using Google Cloud P
 Data source come from RDBMS(MySQL) and Cloud Composer(Airflow) orchestrates its movement to a GCS. The pyspark script is then run to transform the data and aggregate with API to convert the Price column from USD to THB and then store the data back to GCS in parquet format. Airflow move the transformed data into a data warehouse hosted in Bigquery and then create a view for select certain column that use to create a dashboard.
 
 ## TRANSFORM TABLE SCHEMA
-![audible data](https://user-images.githubusercontent.com/48947748/160276412-bb3139b6-47b2-4f83-9611-b38e115f92ab.png)</ br>
+![audible data](https://user-images.githubusercontent.com/48947748/160276412-bb3139b6-47b2-4f83-9611-b38e115f92ab.png) </ br>
 The transform data is contain only one table why? because the raw data in MySQL are contain two table then I think its better if I join two table and then store it in data warehouse
 
 ## ETL FLOW:
